@@ -32,7 +32,9 @@ app.post("/api/sendjson", (req, res) => {
   res.json({ success: true });
 });
 
-app.get("/api/printjson", (req, res) => {});
+app.get("/api/printjson", (req, res) => {
+  res.json(jsonMessages);
+});
 
 port = 3000;
 app.listen(3000, () => {
